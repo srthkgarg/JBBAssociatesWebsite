@@ -26,5 +26,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jetty" level="project" />
+    <orderEntry type="library" name="xstream" level="project" />
+    <orderEntry type="library" name="apachecommons" level="project" />
+    <orderEntry type="library" name="json" level="project" />
   </component>
 </module>
