@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="Gradle : JBBAssociateWebsite : JBBAssociateWebsite-1.0-SNAPSHOT.ear">
+    <output-path>$PROJECT_DIR$/out/artifacts/JBBAssociateWebsite</output-path>
+    <properties id="gradle-properties">
+      <options external-project-path="$PROJECT_DIR$" />
+    </properties>
+    <root id="archive" name="JBBAssociateWebsite-1.0-SNAPSHOT.ear">
+      <element id="artifact" artifact-name="Gradle : JBBAssociateWebsite : JBBAssociateWebsite-1.0-SNAPSHOT.ear (exploded)" />
+    </root>
+  </artifact>
+</component>
