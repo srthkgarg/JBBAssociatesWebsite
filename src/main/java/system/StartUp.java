@@ -26,8 +26,8 @@ public class StartUp {
   public static void main(String[] args) throws Exception {
     setUpAll();
 
-    /*Server server = new Server(8080);
-    *//*ServletHandler handler = new ServletHandler();
+    /*Server server = new Server(8080);*/
+    /*ServletHandler handler = new ServletHandler();
     server.setHandler(handler);
     final String servletName = "DefaultServlet";
     ServletHolder servlet = new ServletHolder(servletName, Default.class);
@@ -35,13 +35,13 @@ public class StartUp {
     ServletMapping servletMapping = new ServletMapping();
     servletMapping.setServletName(servletName);
     servletMapping.setPathSpecs(new String[]{"", "/jsp/index.jsp", "/index.jsp"});
-    handler.addServletMapping(servletMapping);*//*
-    *//*ServletContextHandler handler = new ServletContextHandler(server, "/DefaultServlet");
+    handler.addServletMapping(servletMapping);*/
+    /*ServletContextHandler handler = new ServletContextHandler(server, "/DefaultServlet");
     handler.addServlet(Default.class, "/");
     server.setHandler(handler);
-    server.start();*//*
+    server.start();*/
 
-    WebAppContext ctx = new WebAppContext();
+    /*WebAppContext ctx = new WebAppContext();
     ctx.setResourceBase("webapp");
     ctx.setContextPath("/webapp/index.jsp");
     ctx.setAttribute("org.eclipse.jetty.server.webapp.ContainerIncludeJarPattern",".*//*[^/]*jstl.*\\.jar$");
@@ -50,10 +50,10 @@ public class StartUp {
     classlist.addBefore("org.eclipse.jetty.webapp.JettyWebXmlConfiguration", "org.eclipse.jetty.annotations.AnnotationConfiguration");
     server.setHandler(ctx);
     server.start();
-    server.join();
+    server.join();*/
 
-    *//*startup = new StartUp();
-    *//**//*startup.setupAll();
+    /*startup = new StartUp();*/
+    /*startup.setupAll();
     startup.join(); // block forever till the thread dies*//**//*
     startup.start();
     System.exit(1);*/
@@ -102,7 +102,7 @@ public class StartUp {
       handler.addServlet(servlet);
       ServletMapping servletMapping = new ServletMapping();
       servletMapping.setServletName(servletName);
-      servletMapping.setPathSpecs(new String[]{"", "/index.jsp", "/html/index.html"});
+      servletMapping.setPathSpecs(new String[]{"", "/webapp/index.jsp", "/html/index.html"});
       handler.addServletMapping(servletMapping);
       server.start();
       server.join();
