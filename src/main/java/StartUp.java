@@ -41,7 +41,7 @@ public class StartUp {
     /*// Startup stuff
     final Server server = new Server(8080);
     ServletContextHandler handler = new ServletContextHandler();
-    handler.setResourceBase("../webapp/");
+    handler.setResourceBase("./src/main/webapp/");
 
     SessionHandler sh = new SessionHandler();
     handler.setSessionHandler(sh);
@@ -49,7 +49,7 @@ public class StartUp {
     DefaultServlet defaultServlet = new DefaultServlet();
     ServletHolder holder = new ServletHolder(defaultServlet);
     holder.setInitParameter("useFileMappedBuffer", "false");
-    handler.addServlet(holder, "/");
+    handler.addServlet(holder, "/index.jsp");
     handler.setWelcomeFiles(new String[]{"/html/index.html"});
 
     server.setHandler(handler);
@@ -60,8 +60,8 @@ public class StartUp {
     Server server = new Server(8080);
 
     ResourceHandler resource_handler = new ResourceHandler();
-    //resource_handler.setDirectoriesListed(true);
-    resource_handler.setWelcomeFiles(new String[]{"\\html\\index.html"});
+    resource_handler.setDirectoriesListed(true);
+    resource_handler.setWelcomeFiles(new String[]{"\\index.jsp", "\\html\\index.html"});
     resource_handler.setResourceBase(".\\src\\main\\webapp");
 
     HandlerList handlers = new HandlerList();
