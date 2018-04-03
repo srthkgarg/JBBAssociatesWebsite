@@ -64,7 +64,7 @@ public class StartUp {
       ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(256, 256,
         60, TimeUnit.SECONDS, new LinkedBlockingQueue<Runnable>(),
         new ThreadFactoryWithName("JssWeb-Jetty", true));
-      threadPoolExecutor.allowCoreThreadTimeOut(true);
+      //threadPoolExecutor.allowCoreThreadTimeOut(true);
 
       Server server = new Server(new ExecutorThreadPool(threadPoolExecutor));
 

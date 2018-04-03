@@ -8,7 +8,6 @@ import org.eclipse.jetty.server.session.SessionHandler;
 import org.eclipse.jetty.servlet.*;
 import org.eclipse.persistence.sessions.factories.SessionManager;
 import org.json.simple.JSONObject;
-import utilities.WebUtil;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
