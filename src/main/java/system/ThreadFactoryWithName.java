@@ -1,7 +1,3 @@
-/*
- * Copyright (c) 2007, RevZoom,Inc. All Rights Reserved.
- */
-
 package system;
 
 import java.util.concurrent.ThreadFactory;

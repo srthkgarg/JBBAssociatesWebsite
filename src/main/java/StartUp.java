@@ -58,13 +58,13 @@ public class StartUp {
 
     Server server = new Server(8080);
 
-    ResourceHandler resource_handler = new ResourceHandler();
-    resource_handler.setDirectoriesListed(true);
-    resource_handler.setWelcomeFiles(new String[]{"\\index.jsp", "\\html\\index.html"});
-    resource_handler.setResourceBase(".\\src\\main\\webapp");
+    ResourceHandler resourceHandler = new ResourceHandler();
+    resourceHandler.setDirectoriesListed(true);
+    resourceHandler.setWelcomeFiles(new String[]{".\\index.jsp", ".\\html\\index.html"});
+    resourceHandler.setResourceBase(".\\src\\main\\webapp");
 
     HandlerList handlers = new HandlerList();
-    handlers.setHandlers(new Handler[]{resource_handler, new DefaultHandler()});
+    handlers.setHandlers(new Handler[]{resourceHandler, new DefaultHandler()});
     server.setHandler(handlers);
 
     server.start();
