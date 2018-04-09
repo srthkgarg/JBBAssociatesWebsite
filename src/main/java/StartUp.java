@@ -56,7 +56,7 @@ public class StartUp {
     server.join();*/
 
 
-    Server server = new Server(8080);
+    Server server = new Server(8086);
 
     ResourceHandler resourceHandler = new ResourceHandler();
     resourceHandler.setDirectoriesListed(true);

@@ -7,11 +7,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { StyleRoot } from 'radium';
 
-import LoginComponent from './ui/LoginComponent';
+import RootComponent from './ui/RootComponent';
 
 ReactDOM.render(
   <StyleRoot style={{ height: '100%' }}>
-    <LoginComponent />
+    <RootComponent />
   </StyleRoot>, 
-  document.getElementById('body')
+  document.getElementById('root')
 );
