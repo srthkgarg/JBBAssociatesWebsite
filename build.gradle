@@ -37,6 +37,20 @@ dependencies {
   compile group: 'org.eclipse.jetty', name: 'jetty-webapp', version: '9.4.11.v20180605'
   compile group: 'org.eclipse.jetty', name: 'apache-jsp', version: '9.4.11.v20180605'
 
+  // Jersey Libraries
+  compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet-core', version: '2.27'
+  compile group: 'org.glassfish.jersey.inject', name: 'jersey-hk2', version: '2.27'
+  compile group: 'org.glassfish.jersey.media', name: 'jersey-media-json-jackson', version: '2.27'
+  compile group: 'org.glassfish.jersey.core', name: 'jersey-common', version: '2.27'
+  compile group: 'com.fasterxml.jackson.jaxrs', name: 'jackson-jaxrs-json-provider', version: '2.9.6'
+  compile group: 'org.glassfish.jersey.ext', name: 'jersey-entity-filtering', version: '2.27'
+
+  // Data Parser Libraries
+  compile group: 'com.thoughtworks.xstream', name: 'xstream', version: '1.4.10'
+
+  // DB Libraries
+  compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.12'
+
   // Logging log4j Libraries
   compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.11.1'
   compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.11.1'
