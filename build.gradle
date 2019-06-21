@@ -44,12 +44,15 @@ dependencies {
   // Mail Libraries
   compile group: 'javax.mail', name: 'mail', version: '1.4.7'
   compile group: 'javax.mail', name: 'javax.mail-api', version: '1.6.2'
+
+  // Message Libraries
+  //compile group: 'com.twilio.sdk', name: 'twilio', version: '7.39.0'
 }
 
 ear {
-  appDirName 'src/main/webapp'  // use application metadata found in this folder
+  appDirName 'src/main/app'  // use application metadata found in this folder
   // put dependent libraries into APP-INF/lib inside the generated EAR
-  libDirName 'WEB-INF/lib'
+  libDirName 'APP-INF/lib'
   deploymentDescriptor {  // custom entries for application.xml:
 //      fileName = "application.xml"  // same as the default value
 //      version = "6"  // same as the default value
