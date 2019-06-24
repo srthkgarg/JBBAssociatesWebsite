@@ -310,12 +310,10 @@ gradle-app.setting
 
 
 ######## Custom Files ########
-.gradle/
 
 ## JS Files
-src/main/webapp/node_modules/
-src\main\webapp\package-lock.json
-src\main\webapp\bundle.js
+src/main/webapp/js/bundle.js
+src/main/webapp/package-lock.json
 
 ## Auto-Generated Files
 .idea\modules\JBBAssociateWebsite_test.iml
