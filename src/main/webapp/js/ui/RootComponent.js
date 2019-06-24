@@ -7,11 +7,10 @@ export default class RootComponent extends React.Component {
   render() {
     return (
       <div>
-        {/*Page Preloder*/}
         <div id="preloder">
           <div className="loader"></div>
         </div>
-        {/* Header Section Begin */}
+
         <header className="header-section">
           <div className="container-fluid">
             <div className="row">
@@ -30,8 +29,8 @@ export default class RootComponent extends React.Component {
                   <li><a href="html/contact.html">Contact</a></li>
 
                   <li className="top-social">
-                    <a href="#"><i className="fa fa-facebook"></i></a>
-                    <a href="#"><i className="fa fa-twitter"></i></a>
+                    <a href="#"><i className="fa fa-facebook"/></a>
+                    <a href="#"><i className="fa fa-twitter"/></a>
                   </li>
                 </ul>
                 <div id="mobile-menu-wrap"></div>
@@ -39,15 +38,15 @@ export default class RootComponent extends React.Component {
             </div>
           </div>
         </header>
-        {/* Header Section End */}
-        {/* Hero Section Begin */}
-        <section className="hero-section home-page set-bg" data-setbg="img/bg.jpg">
+
+        <section className="hero-section home-page set-bg"
+                 style={{ backgroundImage: "images/bg.jpg" }}>
           <div className="container hero-text text-white">
             <h2>Find your next</h2>
             <h2>dream home.</h2>
           </div>
         </section>
-        {/* Hero Section End */}
+
         {/* Filter Search Section Begin */}
         <div className="filter-search">
           <div className="container ">
@@ -132,7 +131,7 @@ export default class RootComponent extends React.Component {
                     </div>
                   </div>
                   <div className="search-btn">
-                    <button type="submit"><i className="flaticon-search"></i>Search</button>
+                    <button type="submit"><i className="flaticon-search"/>Search</button>
                   </div>
                 </form>
               </div>
@@ -146,18 +145,21 @@ export default class RootComponent extends React.Component {
             <div className="row">
               <div className="col-lg-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/1.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/1.jpg">
                     <a href="#" className="room-content">
-                      <i className="flaticon-heart"></i>
+                      <i className="flaticon-heart"/>
                     </a>
                   </div>
                   <div className="room-text">
                     <div className="room-details">
                       <div className="room-title">
                         <h5>Country Style House with beautiful garden and terrace</h5>
-                        <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                        <a href="#" className="large-width"><i className="flaticon-cursor"></i> <span>Show on
-                                            Map</span></a>
+                        <a href="#"><i className="flaticon-placeholder"/>
+                          <span>Location</span>
+                        </a>
+                        <a href="#" className="large-width"><i className="flaticon-cursor"/>
+                          <span>Show on Map</span>
+                        </a>
                       </div>
                     </div>
                     <div className="room-features">
@@ -165,7 +167,7 @@ export default class RootComponent extends React.Component {
                         <div className="size">
                           <p>Lot Size</p>
                           <img src="images/rooms/size.png" alt=""/>
-                          <i className="flaticon-bath"></i>
+                          <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
@@ -195,18 +197,23 @@ export default class RootComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/2.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/2.jpg">
                     <a href="#" className="room-content">
-                      <i className="flaticon-heart"></i>
+                      <i className="flaticon-heart"/>
                     </a>
                   </div>
                   <div className="room-text">
                     <div className="room-details">
                       <div className="room-title">
                         <h5>Country Style House with beautiful garden and terrace</h5>
-                        <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                        <a href="#" className="large-width"><i className="flaticon-cursor"></i> <span>Show on
-                                            Map</span></a>
+                        <a href="#">
+                          <i className="flaticon-placeholder"/>
+                          <span>Location</span>
+                        </a>
+                        <a href="#" className="large-width">
+                          <i className="flaticon-cursor"/>
+                          <span>Show on Map</span>
+                        </a>
                       </div>
                     </div>
                     <div className="room-features">
@@ -214,7 +221,7 @@ export default class RootComponent extends React.Component {
                         <div className="size">
                           <p>Lot Size</p>
                           <img src="images/rooms/size.png" alt=""/>
-                          <i className="flaticon-bath"></i>
+                          <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
@@ -244,18 +251,23 @@ export default class RootComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/3.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/3.jpg">
                     <a href="#" className="room-content">
-                      <i className="flaticon-heart"></i>
+                      <i className="flaticon-heart"/>
                     </a>
                   </div>
                   <div className="room-text">
                     <div className="room-details">
                       <div className="room-title">
                         <h5>Country Style House with beautiful garden and terrace</h5>
-                        <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                        <a href="#" className="large-width"><i className="flaticon-cursor"></i> <span>Show on
-                                            Map</span></a>
+                        <a href="#">
+                          <i className="flaticon-placeholder"/>
+                          <span>Location</span>
+                        </a>
+                        <a href="#" className="large-width">
+                          <i className="flaticon-cursor"/>
+                          <span>Show on Map</span>
+                        </a>
                       </div>
                     </div>
                     <div className="room-features">
@@ -263,7 +275,7 @@ export default class RootComponent extends React.Component {
                         <div className="size">
                           <p>Lot Size</p>
                           <img src="images/rooms/size.png" alt=""/>
-                          <i className="flaticon-bath"></i>
+                          <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
@@ -293,18 +305,23 @@ export default class RootComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/4.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/4.jpg">
                     <a href="#" className="room-content">
-                      <i className="flaticon-heart"></i>
+                      <i className="flaticon-heart"/>
                     </a>
                   </div>
                   <div className="room-text">
                     <div className="room-details">
                       <div className="room-title">
                         <h5>Country Style House with beautiful garden and terrace</h5>
-                        <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                        <a href="#" className="large-width"><i className="flaticon-cursor"></i> <span>Show on
-                                            Map</span></a>
+                        <a href="#">
+                          <i className="flaticon-placeholder"/>
+                          <span>Location</span>
+                        </a>
+                        <a href="#" className="large-width">
+                          <i className="flaticon-cursor"/>
+                          <span>Show on Map</span>
+                        </a>
                       </div>
                     </div>
                     <div className="room-features">
@@ -312,7 +329,7 @@ export default class RootComponent extends React.Component {
                         <div className="size">
                           <p>Lot Size</p>
                           <img src="images/rooms/size.png" alt=""/>
-                          <i className="flaticon-bath"></i>
+                          <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
@@ -342,18 +359,23 @@ export default class RootComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/5.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/5.jpg">
                     <a href="#" className="room-content">
-                      <i className="flaticon-heart"></i>
+                      <i className="flaticon-heart"/>
                     </a>
                   </div>
                   <div className="room-text">
                     <div className="room-details">
                       <div className="room-title">
                         <h5>Country Style House with beautiful garden and terrace</h5>
-                        <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                        <a href="#" className="large-width"><i className="flaticon-cursor"></i> <span>Show on
-                                            Map</span></a>
+                        <a href="#">
+                          <i className="flaticon-placeholder"/>
+                          <span>Location</span>
+                        </a>
+                        <a href="#" className="large-width">
+                          <i className="flaticon-cursor"/>
+                          <span>Show on Map</span>
+                        </a>
                       </div>
                     </div>
                     <div className="room-features">
@@ -361,7 +383,7 @@ export default class RootComponent extends React.Component {
                         <div className="size">
                           <p>Lot Size</p>
                           <img src="images/rooms/size.png" alt=""/>
-                          <i className="flaticon-bath"></i>
+                          <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
@@ -391,18 +413,23 @@ export default class RootComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/6.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/6.jpg">
                     <a href="#" className="room-content">
-                      <i className="flaticon-heart"></i>
+                      <i className="flaticon-heart"/>
                     </a>
                   </div>
                   <div className="room-text">
                     <div className="room-details">
                       <div className="room-title">
                         <h5>Country Style House with beautiful garden and terrace</h5>
-                        <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                        <a href="#" className="large-width"><i className="flaticon-cursor"></i> <span>Show on
-                                            Map</span></a>
+                        <a href="#">
+                          <i className="flaticon-placeholder"/>
+                          <span>Location</span>
+                        </a>
+                        <a href="#" className="large-width">
+                          <i className="flaticon-cursor"/>
+                          <span>Show on Map</span>
+                        </a>
                       </div>
                     </div>
                     <div className="room-features">
@@ -410,7 +437,7 @@ export default class RootComponent extends React.Component {
                         <div className="size">
                           <p>Lot Size</p>
                           <img src="images/rooms/size.png" alt=""/>
-                          <i className="flaticon-bath"></i>
+                          <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
@@ -443,7 +470,7 @@ export default class RootComponent extends React.Component {
         </section>
         {/* Hotel Room Section End */}
         {/* Popular Room Section Begin */}
-        <section className="popular-room set-bg p-in" data-setbg="img/bg-2.jpg">
+        <section className="popular-room set-bg p-in" data-setbg="images/bg-2.jpg">
           <div className="container">
             <div className="row">
               <div className="col-lg-6 offset-lg-6">
@@ -453,8 +480,14 @@ export default class RootComponent extends React.Component {
                       <div className="popular-room-details">
                         <div className="popular-room-title">
                           <h5>Spacious Modern Smart House</h5>
-                          <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                          <a href="#"><i className="flaticon-cursor"></i> <span>Show on Map</span></a>
+                          <a href="#">
+                            <i className="flaticon-placeholder"/>
+                            <span>Location</span>
+                          </a>
+                          <a href="#">
+                            <i className="flaticon-cursor"/>
+                            <span>Show on Map</span>
+                          </a>
                         </div>
                       </div>
                       <div className="popular-room-description">
@@ -469,7 +502,7 @@ export default class RootComponent extends React.Component {
                           <div className="size">
                             <p>Lot Size</p>
                             <img src="images/rooms/size.png" alt=""/>
-                            <i className="flaticon-bath"></i>
+                            <i className="flaticon-bath"/>
                             <span>2561 sqft</span>
                           </div>
                           <div className="beds">
@@ -502,8 +535,14 @@ export default class RootComponent extends React.Component {
                       <div className="popular-room-details">
                         <div className="popular-room-title">
                           <h5>Spacious Modern Smart House</h5>
-                          <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                          <a href="#"><i className="flaticon-cursor"></i> <span>Show on Map</span></a>
+                          <a href="#">
+                            <i className="flaticon-placeholder"/>
+                            <span>Location</span>
+                          </a>
+                          <a href="#">
+                            <i className="flaticon-cursor"/>
+                            <span>Show on Map</span>
+                          </a>
                         </div>
                       </div>
                       <div className="popular-room-description">
@@ -518,7 +557,7 @@ export default class RootComponent extends React.Component {
                           <div className="size">
                             <p>Lot Size</p>
                             <img src="images/rooms/size.png" alt=""/>
-                            <i className="flaticon-bath"></i>
+                            <i className="flaticon-bath"/>
                             <span>2561 sqft</span>
                           </div>
                           <div className="beds">
@@ -551,8 +590,14 @@ export default class RootComponent extends React.Component {
                       <div className="popular-room-details">
                         <div className="popular-room-title">
                           <h5>Spacious Modern Smart House</h5>
-                          <a href="#"><i className="flaticon-placeholder"></i> <span>Location</span></a>
-                          <a href="#"><i className="flaticon-cursor"></i> <span>Show on Map</span></a>
+                          <a href="#">
+                            <i className="flaticon-placeholder"/>
+                            <span>Location</span>
+                          </a>
+                          <a href="#">
+                            <i className="flaticon-cursor"/>
+                            <span>Show on Map</span>
+                          </a>
                         </div>
                       </div>
                       <div className="popular-room-description">
@@ -567,7 +612,7 @@ export default class RootComponent extends React.Component {
                           <div className="size">
                             <p>Lot Size</p>
                             <img src="images/rooms/size.png" alt=""/>
-                            <i className="flaticon-bath"></i>
+                            <i className="flaticon-bath"/>
                             <span>2561 sqft</span>
                           </div>
                           <div className="beds">
@@ -636,15 +681,24 @@ export default class RootComponent extends React.Component {
               <div className="col-lg-6">
                 <div className="right-side">
                   <ul>
-                    <li><img src="images/check.png" alt=""/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    <li>
+                      <img src="images/check.png" alt=""/>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </li>
-                    <li><img src="images/check.png" alt=""/>Praesent tincidunt diam in ante faucibus tristique.</li>
-                    <li><img src="images/check.png" alt=""/>Vivamus id nisl sed mi varius lobortis.</li>
-                    <li><img src="images/check.png" alt=""/>Suspendisse sit amet erat placerat, molestie neque id
+                    <li>
+                      <img src="images/check.png" alt=""/>Praesent tincidunt diam in ante faucibus tristique.
                     </li>
-                    <li><img src="images/check.png" alt=""/>Fusce pretium libero sit amet ipsum posuere pretium.
+                    <li>
+                      <img src="images/check.png" alt=""/>Vivamus id nisl sed mi varius lobortis.
                     </li>
-                    <li><img src="images/check.png" alt=""/>Praesent tincidunt diam in ante faucibus tristique.</li>
+                    <li>
+                      <img src="images/check.png" alt=""/>Suspendisse sit amet erat placerat, molestie neque id
+                    </li>
+                    <li>
+                      <img src="images/check.png" alt=""/>Fusce pretium libero sit amet ipsum posuere pretium.
+                    </li>
+                    <li>
+                      <img src="images/check.png" alt=""/>Praesent tincidunt diam in ante faucibus tristique.
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -689,11 +743,21 @@ export default class RootComponent extends React.Component {
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend tristique venenatis.
                     Maecenas a rutrum tellus nam vel semper nibh.</p>
                   <div className="footer-social">
-                    <a href="#"><i className="fa fa-pinterest"></i></a>
-                    <a href="#"><i className="fa fa-facebook"></i></a>
-                    <a href="#"><i className="fa fa-twitter"></i></a>
-                    <a href="#"><i className="fa fa-dribbble"></i></a>
-                    <a href="#"><i className="fa fa-behance"></i></a>
+                    <a href="#">
+                      <i className="fa fa-pinterest"/>
+                    </a>
+                    <a href="#">
+                      <i className="fa fa-facebook"/>
+                    </a>
+                    <a href="#">
+                      <i className="fa fa-twitter"/>
+                    </a>
+                    <a href="#">
+                      <i className="fa fa-dribbble"/>
+                    </a>
+                    <a href="#">
+                      <i className="fa fa-behance"/>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -708,11 +772,11 @@ export default class RootComponent extends React.Component {
                     <div className="rt-side">
                       <h6>How to find the perfect area for<br/> your next house.</h6>
                       <div className="blog-time">
-                        <i className="flaticon-clock"></i>
+                        <i className="flaticon-clock"/>
                         <span>5 min</span>
                       </div>
                       <a href="#" className="read-more">
-                        <i className="flaticon-right-arrow-1"></i>
+                        <i className="flaticon-right-arrow-1"/>
                         <span>Read More</span>
                       </a>
                     </div>
@@ -724,11 +788,11 @@ export default class RootComponent extends React.Component {
                     <div className="rt-side">
                       <h6>How to find the perfect area for<br/> your next house.</h6>
                       <div className="blog-time">
-                        <i className="flaticon-clock"></i>
+                        <i className="flaticon-clock"/>
                         <span>5 min</span>
                       </div>
                       <a href="#" className="read-more">
-                        <i className="flaticon-right-arrow-1"></i>
+                        <i className="flaticon-right-arrow-1"/>
                         <span>Read More</span>
                       </a>
                     </div>
@@ -739,10 +803,18 @@ export default class RootComponent extends React.Component {
                 <div className="footer-address">
                   <h5>Get In Touch</h5>
                   <ul>
-                    <li><i className="flaticon-placeholder"></i><span>132 Liberty Streetelit, Plano, Texas</span>
+                    <li>
+                      <i className="flaticon-placeholder"/>
+                      <span>132 Liberty Streetelit, Plano, Texas</span>
                     </li>
-                    <li><i className="flaticon-envelope"></i><span>hello@home.com</span></li>
-                    <li><i className="flaticon-smartphone"></i><span>214-805-4428</span></li>
+                    <li>
+                      <i className="flaticon-envelope"/>
+                      <span>hello@home.com</span>
+                    </li>
+                    <li>
+                      <i className="flaticon-smartphone"/>
+                      <span>214-805-4428</span>
+                    </li>
                   </ul>
                   <p>Monday – Friday: 9 am – 5 pm</p>
                   <p>Saturday: 9 am – 1pm</p>
@@ -753,13 +825,10 @@ export default class RootComponent extends React.Component {
             <div className="row p-20">
               <div className="col-lg-12 text-center">
                 <div className="copyright">
-                  {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
                   Copyright &copy;
                   <script>document.write(new Date().getFullYear());</script>
-                  All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by
+                  All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"/> by
                   <a href="https://colorlib.com" target="_blank">Colorlib</a>
-                  {/* Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. */}
-
                 </div>
               </div>
             </div>
