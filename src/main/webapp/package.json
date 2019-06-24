@@ -5,9 +5,9 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -d",
-    "build-watch": "webpack --watch --progress",
-    "build-prod": "webpack -p && cp src/index.html dist/index.html"
+    "compile": "webpack -d",
+    "compile-watch": "webpack --watch --progress",
+    "build": "webpack -p"
   },
   "repository": {
     "type": "git",

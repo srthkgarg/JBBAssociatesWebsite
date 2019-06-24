@@ -11,7 +11,7 @@ module.exports = {
     __filename: true
   },
   output: {
-    path: DIST_DIR + "/js",
+    path: DIST_DIR,
     filename: "bundle.js",
     //publicPath: "./",
     pathinfo: true
@@ -19,10 +19,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.js?/,
-        include: SRC_DIR,
+        test: /\.js?$/,
+        exclude: /node_modules/,
         loader: "babel-loader",
-        query: {
+        options: {
           presets: ["react", "es2015", "stage-2"]
         }
       }

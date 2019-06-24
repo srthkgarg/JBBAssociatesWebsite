@@ -5,7 +5,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { StyleRoot } from 'radium';
+import {StyleRoot} from 'radium';
 import {BrowserRouter} from 'react-router-dom';
 
 import RootComponent from './ui/RootComponent';
@@ -16,5 +16,5 @@ ReactDOM.render(
       <RootComponent/>
     </BrowserRouter>
   </StyleRoot>, 
-  document.getElementById('divRootComponent')
+  document.getElementById('root')
 );
