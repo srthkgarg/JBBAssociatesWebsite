@@ -8,6 +8,7 @@ export default class RootComponent extends React.Component {
     return (
       <div>
         <h1>Welcome to JBB Associates</h1>
+
       </div>
     );
   }

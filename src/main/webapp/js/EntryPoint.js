@@ -16,5 +16,5 @@ ReactDOM.render(
       <RootComponent/>
     </BrowserRouter>
   </StyleRoot>, 
-  document.getElementById('rootDiv')
+  document.getElementById('divRootComponent')
 );

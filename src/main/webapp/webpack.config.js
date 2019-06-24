@@ -4,13 +4,13 @@ var fs = require('fs');
 module.exports = {
   devtool: 'source-map',
   entry: {
-    'bundle': __dirname + "/src/main/webapp/js/EntryPoint.js"
+    'bundle': __dirname + "/js/EntryPoint.js"
   },
   node: {
     __filename: true
   },
   output: {
-    path: __dirname + '/src/main/webapp/',
+    path: __dirname,
     filename: "[name].js",
     pathinfo: true
   },
