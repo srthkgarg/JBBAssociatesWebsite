@@ -4,27 +4,24 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-export default class RootComponent extends React.Component {
+export default class HomeComponent extends React.Component {
   render() {
     return (
       <div>
-        <div id="preloder">
-          <div className="loader"></div>
-        </div>
-
         <header className="header-section">
           <div className="container-fluid">
             <div className="row">
               <div className="col-lg-12">
                 <div className="logo">
-                  <a href="/home">
+                  <a href="./index.html" style={{width: "15px", height: "15px"}}>
                     <img src="images/only-logo.png" alt=""/>
                   </a>
                 </div>
                 <ul className="main-menu">
-                  <li><Link to="/home">Home</Link></li>
-                  <li><Link to="/search">Search</Link></li>
-                  <li><Link to="/admin">Admin</Link></li>
+                  <li><a href="html/home.html">Home</a></li>
+                  <li><a href="html/search.html">Search</a></li>
+                  <li><a href="html/about.html">Categories</a></li>
+                  <li><a href="html/blog.html">Blog</a></li>
                   <li><Link to="/contact">Contact</Link></li>
 
                   <li className="top-social">
@@ -834,6 +831,7 @@ export default class RootComponent extends React.Component {
           </div>
         </footer>
         {/* Footer Section End */}
+
       </div>
     );
   }
