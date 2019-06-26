@@ -1,7 +1,8 @@
-import MessageUtil from "zmplugin/utils/MessageUtil";
+//@flow
+import MessageUtil from "../utils/MessageUtil";
 
 /**
- * Created by om on 05/01/17.
+ *
  */
 export default class Iterator {
 

@@ -1,5 +1,8 @@
-import MessageUtil from "zmplugin/utils/MessageUtil";
+import MessageUtil from "../utils/MessageUtil";
 
+/**
+ *
+ */
 export default class Collection {
   constructor() {
 

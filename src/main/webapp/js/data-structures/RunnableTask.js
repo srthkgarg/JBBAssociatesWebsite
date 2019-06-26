@@ -1,4 +1,5 @@
-import MessageUtil from "zmplugin/utils/MessageUtil";
+//@flow
+import MessageUtil from "../utils/MessageUtil";
 
 /**
  * a prototype class for any runnable type task.

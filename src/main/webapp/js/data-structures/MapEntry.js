@@ -1,5 +1,7 @@
+//@flow
+
 /**
- * Created by Sarthak on 09-01-2017.
+ *
  */
 export default class MapEntry {
   constructor(_key, _value) {

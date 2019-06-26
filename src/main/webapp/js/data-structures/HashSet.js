@@ -1,13 +1,10 @@
-/**
-  * Organization: Revzoom India Pvt Ltd.
-  * User: om
-  * Date: 05/01/17
-  * Time: 11:40 PM
-  */
+//@flow
 import Collection from "./Collection";
-import "./Iterator";
-import "./HashSetIterator";
 import HashSetIterator from "./HashSetIterator";
+
+/**
+ *
+ */
 export default class HashSet extends Collection {
 
   /**

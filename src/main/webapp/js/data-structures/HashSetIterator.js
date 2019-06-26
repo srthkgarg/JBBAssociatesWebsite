@@ -1,7 +1,11 @@
+//@flow
 import Iterator from "./Iterator";
 import HashSet from "./HashSet";
-import MessageUtil from "zmplugin/utils/MessageUtil";
+import MessageUtil from "../utils/MessageUtil";
 
+/**
+ *
+ */
 export default class HashSetIterator extends Iterator {
 
   /**

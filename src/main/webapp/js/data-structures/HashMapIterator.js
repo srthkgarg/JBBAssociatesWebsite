@@ -1,19 +1,14 @@
-/**
- * Organization: Revzoom India Pvt Ltd.
- * User: om
- * Date: 17/01/17
- * Time: 10:59 PM
- */
+//@flow
+import Iterator from "./Iterator";
+import HashMap from "./HashMap";
+import MapEntry from "./MapEntry";
+import MessageUtil from "../utils/MessageUtil";
 
 /**
  * HashMapIterator is used iterate over HashMaps.
  * I won't recommend using iterator. As it will make a copy.
  * We need to write better implementation of Iterator and maps
  */
-import Iterator from "./Iterator";
-import HashMap from "./HashMap";
-import MapEntry from "./MapEntry";
-import MessageUtil from "zmplugin/utils/MessageUtil";
 export default class HashMapIterator extends Iterator {
 
   /**

@@ -1,10 +1,7 @@
-import MessageUtil from "zmplugin/utils/MessageUtil";
+import MessageUtil from "../utils/MessageUtil";
 
 /**
- * Organization: Revzoom India Pvt Ltd.
- * User: Sarthak
- * Date: 09-01-2017
- * Time: 5:36 PM
+ *
  */
 export default class AbstractMap {
   constructor() {

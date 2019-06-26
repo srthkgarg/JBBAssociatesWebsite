@@ -1,13 +1,10 @@
-/**
- * Organization: Revzoom India Pvt Ltd.
- * User: Sarthak
- * Date: 09-01-2017
- * Time: 10:16 PM
- */
+//@flow
 import AbstractMap from "./AbstractMap";
-import Iterator from "./Iterator";
 import HashMapIterator from "./HashMapIterator";
 
+/**
+ *
+ */
 export default class HashMap extends AbstractMap {
 
   /**

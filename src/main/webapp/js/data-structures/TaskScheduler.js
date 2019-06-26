@@ -1,5 +1,7 @@
+//@flow
+
 /**
- * Created by Sarthak on 8/24/2018.
+ *
  */
 export default class TaskScheduler {
   /**
