@@ -48,7 +48,7 @@ public class StartUp {
     WebAppContext webAppContext = new WebAppContext();
     webAppContext.setDescriptor(webAppContext + "/WEB-INF/web.xml");
     webAppContext.setResourceBase("./src/main/webapp");
-    webAppContext.setContextPath("/jbb-associates");
+    webAppContext.setContextPath("/home");
     webAppContext.setWelcomeFiles(new String[]{"./html/index.html"});
     return webAppContext;
   }
