@@ -1,5 +1,7 @@
+//@flow
+
 /**
- * Created by Sarthak on 8/2/2018.
+ *
  */
 export default class LogLevel {
 

@@ -1,9 +1,9 @@
+//@flow
 import _ from 'lodash';
-import TaskScheduler from '../protocol/TaskScheduler';
+import TaskScheduler from '../data-structures/TaskScheduler';
 
 import StringUtil from '../utils/StringUtil';
 import PropertyUtil from '../utils/PropertyUtil';
-import PluginAPI from 'PluginAPI';
 import ConsoleLogger from './ConsoleLogger';
 
 import WorkerResponse from '../worker/WorkerResponse';

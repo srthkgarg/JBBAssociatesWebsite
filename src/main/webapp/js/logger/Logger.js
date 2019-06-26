@@ -1,4 +1,4 @@
-import PluginAPI from 'PluginAPI';
+//@flow
 import LogLevel from './LogLevel';
 import ConsoleLogger from './ConsoleLogger';
 import FileLogger from './FileLogger';
@@ -6,10 +6,7 @@ import FileLogger from './FileLogger';
 import PropertyUtil from '../utils/PropertyUtil';
 
 /**
- * Organization: Revzoom India Pvt Ltd.
- * User: om
- * Date: 28/03/17
- * Time: 6:33 PM
+ *
  */
 export default class Logger {
 
