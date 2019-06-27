@@ -1,6 +1,4 @@
-/**
- * Created by Sarthak on 4/9/2018.
- */
+//@flow
 import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, BrowserRouter, Route, Switch} from 'react-router-dom';
