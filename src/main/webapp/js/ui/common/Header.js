@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
+import AuthenticationController from '../../controllers/AuthenticationController';
+
 /**
  *
  */
@@ -15,9 +17,7 @@ export default class Header extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-
-    };
+    this.state = {};
   }
 
   render() {
@@ -31,18 +31,24 @@ export default class Header extends React.Component {
                   <img src="images/only-logo.png" alt=""/>
                 </a>
               </div>
-              <ul className="main-menu">
-                <li><Link to="/home">Home</Link></li>
-                <li><Link to="/search">Search</Link></li>
-                <li><Link to="/admin">Admin</Link></li>
-                <li><Link to="/login">Login</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-
-                <li className="top-social">
-                  <a href="#"><i className="fa fa-facebook"/></a>
-                  <a href="#"><i className="fa fa-twitter"/></a>
-                </li>
-              </ul>
+              {
+                AuthenticationController.isUserAuthenticated() ?
+                  <ul className="main-menu">
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/search">Search</Link></li>
+                    {
+                      AuthenticationController.isUserAdmin() ?
+                        <li><Link to="/admin">Admin</Link></li>
+                        : null
+                    }
+                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/home">Logout</Link></li>
+                  </ul> :
+                  <ul className="main-menu">
+                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/home">Login</Link></li>
+                  </ul>
+              }
               <div id="mobile-menu-wrap"></div>
             </div>
           </div>

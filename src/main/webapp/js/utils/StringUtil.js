@@ -4,7 +4,6 @@ import {
   FILE_NAME_DELIMITER
 } from '../store/Constants';
 import PropertyUtil from './PropertyUtil';
-import PluginAPI from 'PluginAPI';
 
 /**
  * Utility class to hold all types of string related functionalities.

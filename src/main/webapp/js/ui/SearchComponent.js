@@ -9,7 +9,7 @@ export default class SearchComponent extends React.Component {
   render() {
     return (
       <div>
-        <section className="hero-section set-bg search-result" data-setbg="img/bg.jpg">
+        <section className="hero-section set-bg search-result" data-setbg="images/bg.jpg">
           <div className="container hero-text text-white">
             <h2>Search Results</h2>
           </div>
@@ -126,7 +126,7 @@ export default class SearchComponent extends React.Component {
             <div className="row">
               <div className="col-lg-4 col-md-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/1.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/1.jpg">
                     <a href="#" className="room-content">
                       <i className="flaticon-heart"/>
                     </a>
@@ -149,23 +149,23 @@ export default class SearchComponent extends React.Component {
                       <div className="room-info">
                         <div className="size">
                           <p>Lot Size</p>
-                          <img src="img/rooms/size.png" alt=""/>
+                          <img src="images/rooms/size.png" alt=""/>
                           <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
                           <p>Beds</p>
-                          <img src="img/rooms/bed.png" alt=""/>
+                          <img src="images/rooms/bed.png" alt=""/>
                           <span>9</span>
                         </div>
                         <div className="baths">
                           <p>Baths</p>
-                          <img src="img/rooms/bath.png" alt=""/>
+                          <img src="images/rooms/bath.png" alt=""/>
                           <span>2</span>
                         </div>
                         <div className="garage">
                           <p>Garage</p>
-                          <img src="img/rooms/garage.png" alt=""/>
+                          <img src="images/rooms/garage.png" alt=""/>
                           <span>1</span>
                         </div>
                       </div>
@@ -180,7 +180,7 @@ export default class SearchComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/2.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/2.jpg">
                     <a href="#" className="room-content">
                       <i className="flaticon-heart"/>
                     </a>
@@ -203,23 +203,23 @@ export default class SearchComponent extends React.Component {
                       <div className="room-info">
                         <div className="size">
                           <p>Lot Size</p>
-                          <img src="img/rooms/size.png" alt=""/>
+                          <img src="images/rooms/size.png" alt=""/>
                           <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
                           <p>Beds</p>
-                          <img src="img/rooms/bed.png" alt=""/>
+                          <img src="images/rooms/bed.png" alt=""/>
                           <span>9</span>
                         </div>
                         <div className="baths">
                           <p>Baths</p>
-                          <img src="img/rooms/bath.png" alt=""/>
+                          <img src="images/rooms/bath.png" alt=""/>
                           <span>2</span>
                         </div>
                         <div className="garage">
                           <p>Garage</p>
-                          <img src="img/rooms/garage.png" alt=""/>
+                          <img src="images/rooms/garage.png" alt=""/>
                           <span>1</span>
                         </div>
                       </div>
@@ -234,7 +234,7 @@ export default class SearchComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/3.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/3.jpg">
                     <a href="#" className="room-content">
                       <i className="flaticon-heart"/>
                     </a>
@@ -257,23 +257,23 @@ export default class SearchComponent extends React.Component {
                       <div className="room-info">
                         <div className="size">
                           <p>Lot Size</p>
-                          <img src="img/rooms/size.png" alt=""/>
+                          <img src="images/rooms/size.png" alt=""/>
                           <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
                           <p>Beds</p>
-                          <img src="img/rooms/bed.png" alt=""/>
+                          <img src="images/rooms/bed.png" alt=""/>
                           <span>9</span>
                         </div>
                         <div className="baths">
                           <p>Baths</p>
-                          <img src="img/rooms/bath.png" alt=""/>
+                          <img src="images/rooms/bath.png" alt=""/>
                           <span>2</span>
                         </div>
                         <div className="garage">
                           <p>Garage</p>
-                          <img src="img/rooms/garage.png" alt=""/>
+                          <img src="images/rooms/garage.png" alt=""/>
                           <span>1</span>
                         </div>
                       </div>
@@ -288,7 +288,7 @@ export default class SearchComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/4.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/4.jpg">
                     <a href="#" className="room-content">
                       <i className="flaticon-heart"/>
                     </a>
@@ -311,23 +311,23 @@ export default class SearchComponent extends React.Component {
                       <div className="room-info">
                         <div className="size">
                           <p>Lot Size</p>
-                          <img src="img/rooms/size.png" alt=""/>
+                          <img src="images/rooms/size.png" alt=""/>
                           <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
                           <p>Beds</p>
-                          <img src="img/rooms/bed.png" alt=""/>
+                          <img src="images/rooms/bed.png" alt=""/>
                           <span>9</span>
                         </div>
                         <div className="baths">
                           <p>Baths</p>
-                          <img src="img/rooms/bath.png" alt=""/>
+                          <img src="images/rooms/bath.png" alt=""/>
                           <span>2</span>
                         </div>
                         <div className="garage">
                           <p>Garage</p>
-                          <img src="img/rooms/garage.png" alt=""/>
+                          <img src="images/rooms/garage.png" alt=""/>
                           <span>1</span>
                         </div>
                       </div>
@@ -342,7 +342,7 @@ export default class SearchComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/5.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/5.jpg">
                     <a href="#" className="room-content">
                       <i className="flaticon-heart"/>
                     </a>
@@ -365,23 +365,23 @@ export default class SearchComponent extends React.Component {
                       <div className="room-info">
                         <div className="size">
                           <p>Lot Size</p>
-                          <img src="img/rooms/size.png" alt=""/>
+                          <img src="images/rooms/size.png" alt=""/>
                           <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
                           <p>Beds</p>
-                          <img src="img/rooms/bed.png" alt=""/>
+                          <img src="images/rooms/bed.png" alt=""/>
                           <span>9</span>
                         </div>
                         <div className="baths">
                           <p>Baths</p>
-                          <img src="img/rooms/bath.png" alt=""/>
+                          <img src="images/rooms/bath.png" alt=""/>
                           <span>2</span>
                         </div>
                         <div className="garage">
                           <p>Garage</p>
-                          <img src="img/rooms/garage.png" alt=""/>
+                          <img src="images/rooms/garage.png" alt=""/>
                           <span>1</span>
                         </div>
                       </div>
@@ -396,7 +396,7 @@ export default class SearchComponent extends React.Component {
               </div>
               <div className="col-lg-4 col-md-4 col-md-6">
                 <div className="room-items">
-                  <div className="room-img set-bg" data-setbg="img/rooms/6.jpg">
+                  <div className="room-img set-bg" data-setbg="images/rooms/6.jpg">
                     <a href="#" className="room-content">
                       <i className="flaticon-heart"/>
                     </a>
@@ -419,23 +419,23 @@ export default class SearchComponent extends React.Component {
                       <div className="room-info">
                         <div className="size">
                           <p>Lot Size</p>
-                          <img src="img/rooms/size.png" alt=""/>
+                          <img src="images/rooms/size.png" alt=""/>
                           <i className="flaticon-bath"/>
                           <span>2561 sqft</span>
                         </div>
                         <div className="beds">
                           <p>Beds</p>
-                          <img src="img/rooms/bed.png" alt=""/>
+                          <img src="images/rooms/bed.png" alt=""/>
                           <span>9</span>
                         </div>
                         <div className="baths">
                           <p>Baths</p>
-                          <img src="img/rooms/bath.png" alt=""/>
+                          <img src="images/rooms/bath.png" alt=""/>
                           <span>2</span>
                         </div>
                         <div className="garage">
                           <p>Garage</p>
-                          <img src="img/rooms/garage.png" alt=""/>
+                          <img src="images/rooms/garage.png" alt=""/>
                           <span>1</span>
                         </div>
                       </div>

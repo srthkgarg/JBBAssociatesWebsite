@@ -12,8 +12,8 @@ import SearchComponent from '../ui/SearchComponent';
 import AdminComponent from '../ui/AdminComponent';
 import ContactComponent from '../ui/ContactComponent';
 import AboutUsComponent from '../ui/AboutUsComponent';
-import SingleHomeComponent from '../ui/common/SingleHomeComponent';
-import ErrorComponent from '../ui/common/ErrorComponent';
+import SingleHomeComponent from './SingleHomeComponent';
+import ErrorComponent from './ErrorComponent';
 
 /**
  *

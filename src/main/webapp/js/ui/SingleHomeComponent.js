@@ -11,7 +11,7 @@ export default class SingleHomeComponent extends React.Component {
   render() {
     return (
       <div>
-        <section className="hero-section set-bg single-property-r" data-setbg="img/bg.jpg">
+        <section className="hero-section set-bg single-property-r" data-setbg="images/bg.jpg">
           <div className="container hero-text text-white">
             <h2>Property Page</h2>
           </div>
@@ -114,10 +114,10 @@ export default class SingleHomeComponent extends React.Component {
               <div className="col-lg-12">
                 <div className="property-img owl-carousel">
                   <div className="single-img">
-                    <img src="img/single-property/1.jpg" alt=""/>
+                    <img src="images/single-property/1.jpg" alt=""/>
                   </div>
                   <div className="single-img">
-                    <img src="img/single-property/2.jpg" alt=""/>
+                    <img src="images/single-property/2.jpg" alt=""/>
                   </div>
                 </div>
               </div>
@@ -139,23 +139,23 @@ export default class SingleHomeComponent extends React.Component {
                         <div className="popular-room-features single-property">
                           <div className="size">
                             <p>Lot Size</p>
-                            <img src="img/rooms/size.png" alt=""/>
+                            <img src="images/rooms/size.png" alt=""/>
                               <i className="flaticon-bath"/>
                               <span>2561 sqft</span>
                           </div>
                           <div className="beds">
                             <p>Beds</p>
-                            <img src="img/rooms/bed.png" alt=""/>
+                            <img src="images/rooms/bed.png" alt=""/>
                               <span>9</span>
                           </div>
                           <div className="baths">
                             <p>Baths</p>
-                            <img src="img/rooms/bath.png" alt=""/>
+                            <img src="images/rooms/bath.png" alt=""/>
                               <span>2</span>
                           </div>
                           <div className="garage">
                             <p>Garage</p>
-                            <img src="img/rooms/garage.png" alt=""/>
+                            <img src="images/rooms/garage.png" alt=""/>
                               <span>1</span>
                           </div>
                         </div>
@@ -180,59 +180,59 @@ export default class SingleHomeComponent extends React.Component {
                         <div className="property-table">
                           <table>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Home theater</td>
-                              <td><img src="img/check.png" alt=""/> Carpeting</td>
-                              <td><img src="img/check.png" alt=""/> Attic fans</td>
+                              <td><img src="images/check.png" alt=""/> Home theater</td>
+                              <td><img src="images/check.png" alt=""/> Carpeting</td>
+                              <td><img src="images/check.png" alt=""/> Attic fans</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Media room</td>
-                              <td><img src="img/check.png" alt=""/> Concrete</td>
-                              <td><img src="img/check.png" alt=""/> Ceiling fans</td>
+                              <td><img src="images/check.png" alt=""/> Media room</td>
+                              <td><img src="images/check.png" alt=""/> Concrete</td>
+                              <td><img src="images/check.png" alt=""/> Ceiling fans</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Family room</td>
-                              <td><img src="img/check.png" alt=""/> Bamboo</td>
-                              <td><img src="img/check.png" alt=""/> Thermostats</td>
+                              <td><img src="images/check.png" alt=""/> Family room</td>
+                              <td><img src="images/check.png" alt=""/> Bamboo</td>
+                              <td><img src="images/check.png" alt=""/> Thermostats</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Gym/workout room</td>
-                              <td><img src="img/check.png" alt=""/> Stone</td>
-                              <td><img src="img/check.png" alt=""/> Single flush toilets</td>
+                              <td><img src="images/check.png" alt=""/> Gym/workout room</td>
+                              <td><img src="images/check.png" alt=""/> Stone</td>
+                              <td><img src="images/check.png" alt=""/> Single flush toilets</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Library</td>
-                              <td><img src="img/check.png" alt=""/> Tile</td>
-                              <td><img src="img/check.png" alt=""/> Window shutters</td>
+                              <td><img src="images/check.png" alt=""/> Library</td>
+                              <td><img src="images/check.png" alt=""/> Tile</td>
+                              <td><img src="images/check.png" alt=""/> Window shutters</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Butler's pantry</td>
-                              <td><img src="img/check.png" alt=""/> Laminate</td>
-                              <td><img src="img/check.png" alt=""/> Solar heat</td>
+                              <td><img src="images/check.png" alt=""/> Butler's pantry</td>
+                              <td><img src="images/check.png" alt=""/> Laminate</td>
+                              <td><img src="images/check.png" alt=""/> Solar heat</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Sunroom</td>
-                              <td><img src="img/check.png" alt=""/> Cork</td>
-                              <td><img src="img/check.png" alt=""/> Solar plumbing</td>
+                              <td><img src="images/check.png" alt=""/> Sunroom</td>
+                              <td><img src="images/check.png" alt=""/> Cork</td>
+                              <td><img src="images/check.png" alt=""/> Solar plumbing</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Downstairs's bedroom</td>
-                              <td><img src="img/check.png" alt=""/> Vinyl / linoleum</td>
-                              <td><img src="img/check.png" alt=""/> Solar Screens</td>
+                              <td><img src="images/check.png" alt=""/> Downstairs's bedroom</td>
+                              <td><img src="images/check.png" alt=""/> Vinyl / linoleum</td>
+                              <td><img src="images/check.png" alt=""/> Solar Screens</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Basement</td>
-                              <td><img src="img/check.png" alt=""/> Manufactured wood</td>
-                              <td><img src="img/check.png" alt=""/> Storm windows</td>
+                              <td><img src="images/check.png" alt=""/> Basement</td>
+                              <td><img src="images/check.png" alt=""/> Manufactured wood</td>
+                              <td><img src="images/check.png" alt=""/> Storm windows</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Guest quarters</td>
-                              <td><img src="img/check.png" alt=""/> Marble</td>
-                              <td><img src="img/check.png" alt=""/> Tankless water heater</td>
+                              <td><img src="images/check.png" alt=""/> Guest quarters</td>
+                              <td><img src="images/check.png" alt=""/> Marble</td>
+                              <td><img src="images/check.png" alt=""/> Tankless water heater</td>
                             </tr>
                             <tr>
-                              <td><img src="img/check.png" alt=""/> Wine storage</td>
-                              <td><img src="img/check.png" alt=""/> Wood</td>
-                              <td><img src="img/check.png" alt=""/> Skylights or sky tubes</td>
+                              <td><img src="images/check.png" alt=""/> Wine storage</td>
+                              <td><img src="images/check.png" alt=""/> Wood</td>
+                              <td><img src="images/check.png" alt=""/> Skylights or sky tubes</td>
                             </tr>
                           </table>
                         </div>
@@ -249,7 +249,7 @@ export default class SingleHomeComponent extends React.Component {
                 <div className="row pb-30">
                   <div className="col-lg-12">
                     <div className="contact-service">
-                      <img src="img/single-property/small.png" alt="" />
+                      <img src="images/single-property/small.png" alt="" />
                         <p>Listed by</p>
                         <h5>Oliver G Harris</h5>
                         <table>
@@ -276,7 +276,7 @@ export default class SingleHomeComponent extends React.Component {
                 <div className="row">
                   <div className="col-lg-12">
                     <div className="room-items">
-                      <div className="room-img set-bg" data-setbg="img/rooms/4.jpg">
+                      <div className="room-img set-bg" data-setbg="images/rooms/4.jpg">
                         <a href="#" className="room-content">
                           <i className="flaticon-heart"/>
                         </a>
@@ -299,23 +299,23 @@ export default class SingleHomeComponent extends React.Component {
                           <div className="room-info">
                             <div className="size">
                               <p>Lot Size</p>
-                              <img src="img/rooms/size.png" alt=""/>
+                              <img src="images/rooms/size.png" alt=""/>
                                 <i className="flaticon-bath"/>
                                 <span>2561 sqft</span>
                             </div>
                             <div className="beds">
                               <p>Beds</p>
-                              <img src="img/rooms/bed.png" alt=""/>
+                              <img src="images/rooms/bed.png" alt=""/>
                                 <span>9</span>
                             </div>
                             <div className="baths">
                               <p>Baths</p>
-                              <img src="img/rooms/bath.png" alt=""/>
+                              <img src="images/rooms/bath.png" alt=""/>
                                 <span>2</span>
                             </div>
                             <div className="garage">
                               <p>Garage</p>
-                              <img src="img/rooms/garage.png" alt=""/>
+                              <img src="images/rooms/garage.png" alt=""/>
                                 <span>1</span>
                             </div>
                           </div>

@@ -15,6 +15,13 @@ export default class AuthenticationModal {
      * @type {String}
      * @private
      */
+    this._userRole = null;
+
+    /**
+     *
+     * @type {String}
+     * @private
+     */
     this._sessionId = null;
 
     /**
@@ -109,4 +116,11 @@ export default class AuthenticationModal {
     this._emailAddress = value;
   }
 
+  get userRole() {
+    return this._userRole;
+  }
+
+  set userRole(value) {
+    this._userRole = value;
+  }
 }
