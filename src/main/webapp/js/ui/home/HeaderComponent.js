@@ -7,7 +7,7 @@ import AuthenticationController from '../../controllers/AuthenticationController
 /**
  *
  */
-export default class Header extends React.Component {
+export default class HeaderComponent extends React.Component {
 
   static propTypes = {
     menuItems: PropTypes.array.required,

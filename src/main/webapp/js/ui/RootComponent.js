@@ -3,15 +3,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link, BrowserRouter, Route, Switch} from 'react-router-dom';
 
-import Header from '../ui/common/Header';
-import Footer from '../ui/common/Footer';
-import HomeComponent from '../ui/HomeComponent';
-import SearchComponent from '../ui/SearchComponent';
-import AdminComponent from '../ui/AdminComponent';
+import HeaderComponent from './home/HeaderComponent';
+import FooterComponent from './home/FooterComponent';
+import HomeComponent from './home/HomeComponent';
+import SearchComponent from './search/SearchComponent';
+import AdminComponent from './admin/AdminComponent';
 import ContactComponent from '../ui/ContactComponent';
 import AboutUsComponent from '../ui/AboutUsComponent';
-import SingleHomeComponent from './SingleHomeComponent';
-import ErrorComponent from './ErrorComponent';
+import SingleHomeComponent from './search/SingleHomeComponent';
+import ErrorComponent from './home/ErrorComponent';
 
 /**
  *
@@ -24,7 +24,7 @@ export default class RootComponent extends React.Component {
           <div className="loader"></div>
         </div>
 
-        <Header/>
+        <HeaderComponent/>
 
         <Switch>
           <Route path="/home" exact component={HomeComponent}/>
@@ -39,7 +39,7 @@ export default class RootComponent extends React.Component {
           <Route component={ErrorComponent}/>
         </Switch>
 
-        <Footer/>
+        <FooterComponent/>
       </div>
     );
   }

@@ -3,11 +3,7 @@ import React from 'react';
 /**
  *
  */
-export default class Footer extends React.Component {
-
-  constructor(props) {
-    super(props);
-  }
+export default class FooterComponent extends React.Component {
 
   render() {
     return (
@@ -35,8 +31,7 @@ export default class Footer extends React.Component {
             <div className="col-lg-4">
               <div className="about-footer">
                 <h5>About JBB Associates</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eleifend tristique venenatis.
-                  Maecenas a rutrum tellus nam vel semper nibh.</p>
+                <p>JBB Associates is a user friendly and a private organization to provide you with the best homes which you ever dream about at a reasonable price.</p>
                 <div className="footer-social">
                   <a href="#">
                     <i className="fa fa-facebook"/>
