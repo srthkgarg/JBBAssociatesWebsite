@@ -3,6 +3,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
 
+import PropertyUtil from '../../utils/PropertyUtil';
+
 /**
  *
  */
@@ -21,18 +23,29 @@ export default class DropDown extends React.Component {
     this.state = {};
   }
 
-  renderEachOption = (option) => {
+  renderEachOption = (dropDownOption) => {
     return (
-      <option className={this.props.childClass} value={option.value}>{option.key}</option>
-    );
+      PropertyUtil.checkIfNotNull(dropDownOption) ?
+        <option key={dropDownOption.key}
+                className={this.props.childClass}
+                value={dropDownOption.value}>
+          {dropDownOption.value}
+        </option> : null
+    )
+      ;
   };
 
   render() {
+    const {options} = this.props;
     return (
-      <select className={this.props.className} style="">
-        _.each(this.props.options, option => this.renderEachOption);
+      <select className={this.props.className}>
+        {
+          options.map(dropdownOption => this.renderEachOption(dropdownOption))
+        }
       </select>
     );
   }
+
+
 }
 

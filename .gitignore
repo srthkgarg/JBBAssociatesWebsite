@@ -317,6 +317,6 @@ src/main/webapp/bundle.js.map
 src/main/webapp/package-lock.json
 
 ## Auto-Generated Files
-.idea\modules\JBBAssociateWebsite_test.iml
-.idea\modules\JBBAssociateWebsite_main.iml
-.idea\modules\JBBAssociateWebsite.iml
+.idea/modules/JBBAssociateWebsite_test.iml
+.idea/modules/JBBAssociateWebsite_main.iml
+.idea/modules/JBBAssociateWebsite.iml

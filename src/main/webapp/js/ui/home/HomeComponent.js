@@ -2,9 +2,48 @@
  * Created by Sarthak on 4/9/2018.
  */
 import React from 'react';
+import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
+import DropDown from '../common/DropDown';
+
+import LocationType from '../../enums/LocationType';
+import PropertySaleType from '../../enums/PropertySaleType';
+import PropertyType from '../../enums/PropertyType';
+
+/**
+ *
+ */
 export default class HomeComponent extends React.Component {
+
+  static propTypes = {
+
+  };
+
+  /**
+   *
+   */
+  constructor(props) {
+    super(props);
+
+    this.state = {
+
+    };
+
+    //binding locally used functions here.
+    this.onSearchCLick().bind(this);
+  }
+
+  /**
+   *
+   */
+  onSearchCLick() {
+
+  }
+
+  /**
+   *
+   */
   render() {
     return (
       <div>
@@ -24,25 +63,15 @@ export default class HomeComponent extends React.Component {
                 <form className="filter-form">
                   <div className="location">
                     <p>Location</p>
-                    <select className="filter-location">
-                      <option value="">Delhi</option>
-                      <option value="">Noida</option>
-                      <option value="">Gurgaon</option>
-                    </select>
+                    <DropDown options={LocationType.toArray()} className="filter-location" />
                   </div>
                   <div className="search-type">
                     <p>Purchase Type</p>
-                    <select className="filter-property">
-                      <option value="">On Sale</option>
-                      <option value="">On Rent</option>
-                    </select>
+                    <DropDown options={PropertySaleType.toArray()} className="filter-property" />
                   </div>
                   <div className="search-type">
                     <p>Property Type</p>
-                    <select className="filter-property">
-                      <option value="">Flat</option>
-                      <option value="">Home</option>
-                    </select>
+                    <DropDown options={PropertyType.toArray()} className="filter-property" />
                   </div>
                   <div className="price-range">
                     <p>Price</p>
@@ -61,19 +90,19 @@ export default class HomeComponent extends React.Component {
                     <p>Bedrooms</p>
                     <div className="room-filter-pagi">
                       <div className="bf-item">
-                        <input type="radio" name="room" id="room-1"/>
+                        <input type="radio" name="room"/>
                         <label htmlFor="room-1">1</label>
                       </div>
                       <div className="bf-item">
-                        <input type="radio" name="room" id="room-2"/>
+                        <input type="radio" name="room"/>
                         <label htmlFor="room-2">2</label>
                       </div>
                       <div className="bf-item">
-                        <input type="radio" name="room" id="room-3"/>
+                        <input type="radio" name="room"/>
                         <label htmlFor="room-3">3</label>
                       </div>
                       <div className="bf-item">
-                        <input type="radio" name="room" id="room-4"/>
+                        <input type="radio" name="room"/>
                         <label htmlFor="room-4">4+</label>
                       </div>
                     </div>
