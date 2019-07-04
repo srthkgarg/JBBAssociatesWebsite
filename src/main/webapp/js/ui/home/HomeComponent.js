@@ -31,13 +31,13 @@ export default class HomeComponent extends React.Component {
     };
 
     //binding locally used functions here.
-    this.onSearchCLick().bind(this);
+    this.onSearchClick().bind(this);
   }
 
   /**
    *
    */
-  onSearchCLick() {
+  onSearchClick() {
 
   }
 
