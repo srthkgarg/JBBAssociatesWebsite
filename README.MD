@@ -33,3 +33,10 @@ Steps :
 7. Configure the app.properties accordingly.
 
 # Gradle Tasks Available 
+
+
+
+# Configuration Properties
+
+
+# DB Structure

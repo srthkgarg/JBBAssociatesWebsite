@@ -1,0 +1,21 @@
+package com.jbbassociates.controllers;
+
+import com.jbbassociates.modals.AuthenticationBean;
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class AuthenticationController {
+
+  @GetMapping(path = "/auth")
+  public AuthenticationBean authenticate() {
+    return new AuthenticationBean(HttpStatus.OK);
+  }
+
+  @GetMapping(path = "/checkAuth")
+  public AuthenticationBean checkAuthentication() {
+    return new AuthenticationBean(HttpStatus.OK);
+  }
+}
