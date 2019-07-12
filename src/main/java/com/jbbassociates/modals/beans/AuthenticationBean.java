@@ -1,4 +1,4 @@
-package com.jbbassociates.modals;
+package com.jbbassociates.modals.beans;
 
 
 import org.springframework.http.HttpStatus;

@@ -34,5 +34,4 @@ class Constants {
    */
   static int SERVER_PORT = 8080;
 
-
 }
