@@ -1,6 +1,8 @@
 package com.jbbassociates.modals.db;
 
 
+import com.jbbassociates.enums.UserRole;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -28,8 +30,11 @@ public class UserDetails {
   @Column(name = "email_id")
   private String emailId;
 
-  @Column(name = "role_id")
-  private int roleId;
+  @Column(name = "mobile_no")
+  private String mobileNo;
+
+  @Column(name = "role")
+  private String role;
 
   @Column(name = "subscribe_news")
   private boolean subscribeNews;
@@ -60,7 +65,7 @@ public class UserDetails {
    * @param emailId
    */
   public UserDetails(String firstName, String lastName, String emailId) {
-    this(firstName, lastName, emailId, false);
+    this(firstName, lastName, emailId, UserRole.BUYER.toString());
   }
 
   /**
@@ -68,10 +73,10 @@ public class UserDetails {
    * @param firstName
    * @param lastName
    * @param emailId
-   * @param isAdmin
+   * @param role
    */
-  public UserDetails(String firstName, String lastName, String emailId, boolean isAdmin) {
-    this(firstName, lastName, emailId, isAdmin, true, true, true);
+  public UserDetails(String firstName, String lastName, String emailId, String role) {
+    this(firstName, lastName, emailId, role, true, true, true);
   }
 
   /**
@@ -79,16 +84,16 @@ public class UserDetails {
    * @param firstName
    * @param lastName
    * @param emailId
-   * @param isAdmin
+   * @param role
    * @param subscribeEmails
    * @param subscribeMsgs
    * @param subscribeNewsFeed
    */
-  public UserDetails(String firstName, String lastName, String emailId, boolean isAdmin, boolean subscribeEmails, boolean subscribeMsgs, boolean subscribeNewsFeed) {
+  public UserDetails(String firstName, String lastName, String emailId, String role, boolean subscribeEmails, boolean subscribeMsgs, boolean subscribeNewsFeed) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.emailId = emailId;
-    //this.roleId = isAdmin? Role.ADMIN : Role.USER;
+    this.role = role;
     this.subscribeEmails = subscribeEmails;
     this.subscribeMsgs = subscribeMsgs;
     this.subscribeNews = subscribeNewsFeed;
@@ -136,12 +141,12 @@ public class UserDetails {
     this.emailId = emailId;
   }
 
-  public int getRoleId() {
-    return roleId;
+  public String getRoleId() {
+    return role;
   }
 
-  public void setRoleId(int roleId) {
-    this.roleId = roleId;
+  public void setRoleId(String role) {
+    this.role = role;
   }
 
   public boolean isSubscribeNews() {
@@ -182,6 +187,14 @@ public class UserDetails {
 
   public void setActive(boolean active) {
     isActive = active;
+  }
+
+  public String getMobileNo() {
+    return mobileNo;
+  }
+
+  public void setMobileNo(String mobileNo) {
+    this.mobileNo = mobileNo;
   }
 }
 
