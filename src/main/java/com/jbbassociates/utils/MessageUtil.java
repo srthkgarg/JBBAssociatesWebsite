@@ -3,6 +3,6 @@ package com.jbbassociates.utils;
 /**
  *
  */
-class MessageUtil {
+public class MessageUtil {
 
 }
