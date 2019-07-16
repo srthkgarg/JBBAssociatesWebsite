@@ -31,6 +31,9 @@ public class HomeDetails {
   @Column(name = "address")
   private String address;
 
+  @Column(name = "area")
+  private String area;
+
   @Column(name = "pin_code")
   private int pinCode;
 
@@ -183,6 +186,14 @@ public class HomeDetails {
 
   public void setCountry(String country) {
     this.country = country;
+  }
+
+  public String getArea() {
+    return area;
+  }
+
+  public void setArea(String area) {
+    this.area = area;
   }
 }
 

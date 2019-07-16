@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class AuthenticationController {
+public class AuthController {
 
   @GetMapping(path = "/auth")
   public AuthenticationBean authenticate() {
@@ -17,4 +17,5 @@ public class AuthenticationController {
   public AuthenticationBean checkAuthentication() {
     return new AuthenticationBean(HttpStatus.OK);
   }
+
 }
