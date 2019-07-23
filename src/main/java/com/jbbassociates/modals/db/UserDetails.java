@@ -4,6 +4,7 @@ package com.jbbassociates.modals.db;
 import com.jbbassociates.enums.UserRole;
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -36,17 +37,8 @@ public class UserDetails {
   @Column(name = "role")
   private String role;
 
-  @Column(name = "subscribe_news")
-  private boolean subscribeNews;
-
-  @Column(name = "subscribe_emails")
-  private boolean subscribeEmails;
-
-  @Column(name = "subscribe_msgs")
-  private boolean subscribeMsgs;
-
   @Column(name = "joining_date")
-  private Date joiningDate;
+  private Timestamp joiningDate;
 
   @Column(name = "is_active")
   private boolean isActive;
@@ -76,28 +68,11 @@ public class UserDetails {
    * @param role
    */
   public UserDetails(String firstName, String lastName, String emailId, String role) {
-    this(firstName, lastName, emailId, role, true, true, true);
-  }
-
-  /**
-   *
-   * @param firstName
-   * @param lastName
-   * @param emailId
-   * @param role
-   * @param subscribeEmails
-   * @param subscribeMsgs
-   * @param subscribeNewsFeed
-   */
-  public UserDetails(String firstName, String lastName, String emailId, String role, boolean subscribeEmails, boolean subscribeMsgs, boolean subscribeNewsFeed) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.emailId = emailId;
     this.role = role;
-    this.subscribeEmails = subscribeEmails;
-    this.subscribeMsgs = subscribeMsgs;
-    this.subscribeNews = subscribeNewsFeed;
-    this.joiningDate = new Date();
+    this.joiningDate = new Timestamp(new Date().getTime());
     this.isActive = true;
   }
 
@@ -149,35 +124,11 @@ public class UserDetails {
     this.role = role;
   }
 
-  public boolean isSubscribeNews() {
-    return subscribeNews;
-  }
-
-  public void setSubscribeNews(boolean subscribeNews) {
-    this.subscribeNews = subscribeNews;
-  }
-
-  public boolean isSubscribeEmails() {
-    return subscribeEmails;
-  }
-
-  public void setSubscribeEmails(boolean subscribeEmails) {
-    this.subscribeEmails = subscribeEmails;
-  }
-
-  public boolean isSubscribeMsgs() {
-    return subscribeMsgs;
-  }
-
-  public void setSubscribeMsgs(boolean subscribeMsgs) {
-    this.subscribeMsgs = subscribeMsgs;
-  }
-
   public Date getJoiningDate() {
     return joiningDate;
   }
 
-  public void setJoiningDate(Date joiningDate) {
+  public void setJoiningDate(Timestamp joiningDate) {
     this.joiningDate = joiningDate;
   }
 

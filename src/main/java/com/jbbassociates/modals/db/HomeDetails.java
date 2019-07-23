@@ -2,6 +2,7 @@ package com.jbbassociates.modals.db;
 
 
 import javax.persistence.*;
+import java.sql.Timestamp;
 import java.util.Date;
 
 /**
@@ -46,17 +47,20 @@ public class HomeDetails {
   @Column(name = "price")
   private int price;
 
+  @Column(name = "currency_type")
+  private String currencyType;
+
   @Column(name = "description")
   private String description;
 
   @Column(name = "submitted_date")
-  private Date submittedDate;
+  private Timestamp submittedDate;
 
   @Column(name = "bought_date")
-  private Date boughtDate;
+  private Timestamp boughtDate;
 
   @Column(name = "buyer_id")
-  private Date buyerId;
+  private int buyerId;
 
   @Column(name = "db_path")
   private String dbPath;
@@ -100,11 +104,11 @@ public class HomeDetails {
     this.description = description;
   }
 
-  public Date getSubmittedDate() {
+  public Timestamp getSubmittedDate() {
     return submittedDate;
   }
 
-  public void setSubmittedDate(Date submittedDate) {
+  public void setSubmittedDate(Timestamp submittedDate) {
     this.submittedDate = submittedDate;
   }
 
@@ -124,19 +128,19 @@ public class HomeDetails {
     this.sellerId = sellerId;
   }
 
-  public Date getBoughtDate() {
+  public Timestamp getBoughtDate() {
     return boughtDate;
   }
 
-  public void setBoughtDate(Date boughtDate) {
+  public void setBoughtDate(Timestamp boughtDate) {
     this.boughtDate = boughtDate;
   }
 
-  public Date getBuyerId() {
+  public int getBuyerId() {
     return buyerId;
   }
 
-  public void setBuyerId(Date buyerId) {
+  public void setBuyerId(int buyerId) {
     this.buyerId = buyerId;
   }
 
@@ -194,6 +198,14 @@ public class HomeDetails {
 
   public void setArea(String area) {
     this.area = area;
+  }
+
+  public String getCurrencyType() {
+    return currencyType;
+  }
+
+  public void setCurrencyType(String currencyType) {
+    this.currencyType = currencyType;
   }
 }
 

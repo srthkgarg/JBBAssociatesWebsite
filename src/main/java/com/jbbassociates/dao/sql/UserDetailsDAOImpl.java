@@ -1,5 +1,6 @@
-package com.jbbassociates.services.dao;
+package com.jbbassociates.dao.sql;
 
+import com.jbbassociates.dao.IntfUserDetailsDAO;
 import com.jbbassociates.modals.db.UserDetails;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;

@@ -1,4 +1,4 @@
-package com.jbbassociates.services.dao;
+package com.jbbassociates.dao;
 
 import com.jbbassociates.modals.db.UserDetails;
 import java.util.List;
@@ -31,6 +31,12 @@ public interface IntfUserDetailsDAO {
    * @return
    */
   UserDetails getUserByEmailId(String emailId);
+
+  /**
+   *
+   * @return
+   */
+  UserDetails getUserByMobileNo(String mobileNo);
 
   /**
    *
