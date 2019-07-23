@@ -50,6 +50,11 @@ public class UserDetailsDAOImpl implements IntfUserDetailsDAO {
     return userDetails != null && !userDetails.isEmpty() ? (UserDetails) userDetails.get(0) : null;
   }
 
+  public UserDetails getUserByMobileNo(String mobileNo) {
+    List<?> userDetails = hibernateTemplate.find("from UserDetails where mobileNo = ? ", mobileNo);
+    return userDetails != null && !userDetails.isEmpty() ? (UserDetails) userDetails.get(0) : null;
+  }
+
   /**
    *
    * @param userDetails {UserDetails}

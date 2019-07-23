@@ -12,7 +12,7 @@ public class HomeUtil {
    * @param homeDetails {HomeDetails}
    * @return {String}
    */
-  static String getCompleteAddress(HomeDetails homeDetails) {
+  public static String getCompleteAddress(HomeDetails homeDetails) {
     return String.format("%1, %2, %3 - %4", homeDetails.getAddress(), homeDetails.getArea(), homeDetails.getCity(), homeDetails.getPinCode());
   }
 

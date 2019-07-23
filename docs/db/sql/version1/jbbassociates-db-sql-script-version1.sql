@@ -11,18 +11,18 @@ CREATE TABLE `user_details_table` (
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
   `email_id` varchar(70) NOT NULL,
-  `mobile_no` int(11) NOT NULL,
+  `mobile_no` varchar(10) NOT NULL,
   `role` varchar(20) NOT NULL,
   `joining_date` DATETIME NOT NULL,
-  `is_active` bit NOT NULL DEFAULT 1,
+  `is_active` BIT NOT NULL DEFAULT 1,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY (`user_id`, `email_id`, `mobile_no`)
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=latin1
 COMMENT = 'Table to store all users data.';
 
 -- Table structure for table `user_search_table`
-DROP TABLE IF EXISTS `user_search_table`;
-CREATE TABLE `user_search_table` (
+DROP TABLE IF EXISTS `user_prefs_table`;
+CREATE TABLE `user_prefs_table` (
   `user_id` INT NOT NULL,
   `subscribe_news` BIT NOT NULL DEFAULT 1,
   `subscribe_emails` BIT NOT NULL DEFAULT 1,

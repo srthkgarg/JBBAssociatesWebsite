@@ -9,7 +9,7 @@ public class PropertyUtil {
    * @param obj {Object}
    * @return {boolean}
    */
-  static boolean isNull(Object obj) {
+  public static boolean isNull(Object obj) {
     return obj == null;
   }
 
@@ -17,7 +17,7 @@ public class PropertyUtil {
    * @param obj {Object}
    * @return {boolean}
    */
-  static boolean isNotNull(Object obj) {
+  public static boolean isNotNull(Object obj) {
     return PropertyUtil.isNotNull(obj);
   }
 

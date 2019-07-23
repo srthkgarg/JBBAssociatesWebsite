@@ -42,7 +42,7 @@ export default class FooterComponent extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6">
+            {/*<div className="col-lg-4 col-md-6">
               <div className="footer-blog">
                 <h5>Latest Blog Posts</h5>
 
@@ -79,7 +79,7 @@ export default class FooterComponent extends React.Component {
                   </div>
                 </div>
               </div>
-            </div>
+            </div>*/}
             <div className="col-lg-4 col-md-6">
               <div className="footer-address">
                 <h5>Get In Touch</h5>
@@ -107,8 +107,7 @@ export default class FooterComponent extends React.Component {
               <div className="copyright">
                 Copyright &copy;
                 <script>document.write(new Date().getFullYear());</script>
-                All rights reserved | This web application is made with <i className="fa fa-heart-o"
-                                                                           aria-hidden="true"/> by
+                All rights reserved | This web application is made by
                 <a href="https://colorlib.com" target="_blank">JBB Associates</a>
               </div>
             </div>

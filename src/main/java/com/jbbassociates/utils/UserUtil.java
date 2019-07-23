@@ -12,7 +12,7 @@ public class UserUtil {
    * @param userId
    * @return
    */
-  static UserRole getUserRole(int userId) {
+  public static UserRole getUserRole(int userId) {
     //Todo: get role value from db for the user Id.
     return UserRole.BUYER;
   }
@@ -22,7 +22,34 @@ public class UserUtil {
    * @param userId
    * @return
    */
-  static boolean isAdmin(int userId) {
+  public static boolean isSuperAdmin(int userId) {
+    return UserUtil.isSuperAdmin(UserUtil.getUserRole(userId));
+  }
+
+  /**
+   *
+   * @param role
+   * @return
+   */
+  public static boolean isSuperAdmin(String role) {
+    return UserUtil.isSuperAdmin(UserRole.toEnum(role));
+  }
+
+  /**
+   *
+   * @param role
+   * @return
+   */
+  public static boolean isSuperAdmin(UserRole role) {
+    return role == UserRole.SUPER_ADMIN;
+  }
+
+  /**
+   *
+   * @param userId
+   * @return
+   */
+  public static boolean isAdmin(int userId) {
     return UserUtil.isAdmin(UserUtil.getUserRole(userId));
   }
 
@@ -31,7 +58,7 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isAdmin(String role) {
+  public static boolean isAdmin(String role) {
     return UserUtil.isAdmin(UserRole.toEnum(role));
   }
 
@@ -40,8 +67,17 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isAdmin(UserRole role) {
+  public static boolean isAdmin(UserRole role) {
     return role == UserRole.ADMIN;
+  }
+
+  /**
+   *
+   * @param userId
+   * @return
+   */
+  public static boolean isSeller(int userId) {
+    return UserUtil.isSeller(UserUtil.getUserRole(userId));
   }
 
   /**
@@ -49,7 +85,7 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isSeller(String role) {
+  public static boolean isSeller(String role) {
     return UserUtil.isSeller(UserRole.toEnum(role));
   }
 
@@ -58,8 +94,17 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isSeller(UserRole role) {
+  public static boolean isSeller(UserRole role) {
     return role == UserRole.SELLER;
+  }
+
+  /**
+   *
+   * @param userId
+   * @return
+   */
+  public static boolean isBuyer(int userId) {
+    return UserUtil.isBuyer(UserUtil.getUserRole(userId));
   }
 
   /**
@@ -67,7 +112,7 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isBuyer(String role) {
+  public static boolean isBuyer(String role) {
     return UserUtil.isBuyer(UserRole.toEnum(role));
   }
 
@@ -76,8 +121,17 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isBuyer(UserRole role) {
+  public static boolean isBuyer(UserRole role) {
     return role == UserRole.BUYER;
+  }
+
+  /**
+   *
+   * @param userId
+   * @return
+   */
+  public static boolean isPropertyDealer(int userId) {
+    return UserUtil.isPropertyDealer(UserUtil.getUserRole(userId));
   }
 
   /**
@@ -85,7 +139,7 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isPropertyDealer(String role) {
+  public static boolean isPropertyDealer(String role) {
     return UserUtil.isPropertyDealer(UserRole.toEnum(role));
   }
 
@@ -94,7 +148,7 @@ public class UserUtil {
    * @param role
    * @return
    */
-  static boolean isPropertyDealer(UserRole role) {
+  public static boolean isPropertyDealer(UserRole role) {
     return role == UserRole.PROPERTY_DEALER;
   }
 

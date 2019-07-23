@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
-import AuthenticationController from '../../controllers/AuthenticationController';
+import AuthController from '../../controllers/AuthController';
 
 /**
  *
@@ -32,12 +32,12 @@ export default class HeaderComponent extends React.Component {
                 </a>
               </div>
               {
-                AuthenticationController.isUserAuthenticated() ?
+                AuthController.isUserAuthenticated() ?
                   <ul className="main-menu">
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/search">Search</Link></li>
                     {
-                      AuthenticationController.isUserAdmin() ?
+                      AuthController.isUserAdmin() ?
                         <li><Link to="/admin">Admin</Link></li>
                         : null
                     }

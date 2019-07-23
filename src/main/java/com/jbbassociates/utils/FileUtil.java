@@ -11,7 +11,7 @@ public class FileUtil {
    * @param filePath {String}
    * @return {boolean}
    */
-  static boolean isExists(String filePath) {
+  public static boolean isExists(String filePath) {
     return PathUtil.isValidPath(filePath) && FileUtil.isExists(new File(filePath));
   }
 
@@ -19,7 +19,7 @@ public class FileUtil {
    * @param file {File}
    * @return {boolean}
    */
-  static boolean isExists(File file) {
+  public static boolean isExists(File file) {
     return file.exists();
   }
 

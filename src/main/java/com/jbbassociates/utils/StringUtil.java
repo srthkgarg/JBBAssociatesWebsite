@@ -10,7 +10,7 @@ public class StringUtil {
    * @param str {String}
    * @return {boolean}
    */
-  static boolean isNullOrEmpty(String str) {
+  public static boolean isNullOrEmpty(String str) {
     return str == null || str.equals("");
   }
 
@@ -19,7 +19,7 @@ public class StringUtil {
    * @param checkContent {boolean}
    * @return {boolean}
    */
-  static boolean isNullOrEmpty(String str, boolean checkContent) {
+  public static boolean isNullOrEmpty(String str, boolean checkContent) {
     boolean isEmpty = StringUtil.isNullOrEmpty(str);
     if (!isEmpty && checkContent) {
       isEmpty = StringUtil.isNullOrEmpty(str.trim());
@@ -31,7 +31,7 @@ public class StringUtil {
    * @param str          {String}
    * @return {boolean}
    */
-  static boolean isNotNullOrEmpty(String str) {
+  public static boolean isNotNullOrEmpty(String str) {
     return StringUtil.isNotNullOrEmpty(str, false);
   }
 
@@ -40,7 +40,7 @@ public class StringUtil {
    * @param checkContent {boolean}
    * @return {boolean}
    */
-  static boolean isNotNullOrEmpty(String str, boolean checkContent) {
+  public static boolean isNotNullOrEmpty(String str, boolean checkContent) {
     return !StringUtil.isNullOrEmpty(str, checkContent);
   }
 
@@ -49,7 +49,7 @@ public class StringUtil {
    * @param str {String}
    * @return {String}
    */
-  static String trim(String str) {
+  public static String trim(String str) {
     return StringUtil.isNotNullOrEmpty(str) ? str.trim() : str;
   }
 

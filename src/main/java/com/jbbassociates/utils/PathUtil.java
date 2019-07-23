@@ -12,7 +12,7 @@ public class PathUtil {
    * @param filePath {String}
    * @return {String}
    */
-  static String normalizePath(String filePath) {
+  public static String normalizePath(String filePath) {
     if (StringUtil.isNotNullOrEmpty(filePath, true)) {
       //Todo: replace '\\' to '/'
       filePath.replaceAll("\\\\", "/");
@@ -25,7 +25,7 @@ public class PathUtil {
    * @param filePath {String}
    * @return {boolean}
    */
-  static boolean isValidFilePath(String filePath) {
+  public static boolean isValidFilePath(String filePath) {
     return PathUtil.isValidPath(filePath) && FileUtil.isExists(new File(filePath));
   }
 
@@ -34,7 +34,7 @@ public class PathUtil {
    * @param path {String}
    * @return {boolean}
    */
-  static boolean isValidPath(String path) {
+  public static boolean isValidPath(String path) {
     //Todo: check for path regex.
     //&& filePath.matches("")
     return StringUtil.isNotNullOrEmpty(path, true);

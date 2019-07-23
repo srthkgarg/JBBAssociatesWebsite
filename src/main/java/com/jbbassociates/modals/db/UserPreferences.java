@@ -10,8 +10,8 @@ import java.util.Date;
  *
  */
 @Entity
-@Table(name = "user_search_table")
-public class UserSearchDetails {
+@Table(name = "user_prefs_table")
+public class UserPreferences {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -39,7 +39,7 @@ public class UserSearchDetails {
   /**
    *
    */
-  public UserSearchDetails() {
+  public UserPreferences() {
 
   }
 
