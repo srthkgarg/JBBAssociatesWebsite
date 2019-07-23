@@ -5,7 +5,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 
-import DropDown from '../common/DropDown';
 import SearchFilterComponent from '../search/SearchFilterComponent';
 
 /**
@@ -28,7 +27,7 @@ export default class HomeComponent extends React.Component {
     };
 
     //binding locally used functions here.
-    this.onSearchClick().bind(this);
+    //this.onSearchClick().bind(this);
   }
 
   /**
@@ -579,18 +578,15 @@ export default class HomeComponent extends React.Component {
           </div>
         </section>
         {/* Newslatter Section End */}
-        {/* Servies Section Begin */}
+
         <section className="services-section">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
                 <div className="left-side">
-                  <h2><span>Why choose homes?</span><br/>Because we we are the best in <br/>br>the business.</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id est nec nisl tristique
-                    dignissim semper sed diam. Donec vulputate neque in massa hendrerit, non dignissim ipsum
-                    varius. Mauris dignissim libero ipsum, nec molestie nulla molestie at. Nam imperdiet
-                    hendrerit finibus. Sed porttitor ultricies sagittis. Nullam lobortis nec quam vitae
-                    venenatis. </p>
+                  <h2><span>Why choose JBB-Associates?</span><br/>Because we we are the best in <br/>the business.</h2>
+                  <p>JBB Associates is a user friendly and a private organization to provide you with the best homes
+                    which you ever dream about at a reasonable market price.</p>
                 </div>
               </div>
               <div className="col-lg-6">
@@ -620,7 +616,7 @@ export default class HomeComponent extends React.Component {
             </div>
           </div>
         </section>
-        {/* Servies Section End */}
+
         <section className="instagram">
           <div className="container">
             <div className="row">

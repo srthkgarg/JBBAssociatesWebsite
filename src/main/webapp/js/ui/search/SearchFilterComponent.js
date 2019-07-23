@@ -3,6 +3,9 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
+
+import DropDown from '../common/DropDown';
+
 import LocationType from '../../enums/LocationType';
 import PropertySaleType from '../../enums/PropertySaleType';
 import PropertyType from '../../enums/PropertyType';

@@ -45,8 +45,8 @@ export default class HeaderComponent extends React.Component {
                     <li><Link to="/home">Logout</Link></li>
                   </ul> :
                   <ul className="main-menu">
-                    <li><Link to="/contact">Contact</Link></li>
                     <li><Link to="/home">Login</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                   </ul>
               }
               <div id="mobile-menu-wrap"></div>

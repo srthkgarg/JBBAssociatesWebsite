@@ -28,7 +28,7 @@ export default class FooterComponent extends React.Component {
             </div>
           </div>
           <div className="row p-37">
-            <div className="col-lg-4">
+            <div className="col-lg-4 offset-lg-2">
               <div className="about-footer">
                 <h5>About JBB Associates</h5>
                 <p>JBB Associates is a user friendly and a private organization to provide you with the best homes which you ever dream about at a reasonable price.</p>
